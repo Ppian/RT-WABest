@@ -586,8 +586,8 @@ void *pt_send_thread(void * argv)
         {
             set_ip_id(Pkt_RST, pt_count);
             set_tcp_seq(Pkt_RST, pt_count);
-            //send_packet(Pkt_RST, Pkt_Size);
-            send_udp_packet(DATA_LENGTH);
+            send_packet(Pkt_RST, Pkt_Size);
+            //send_udp_packet(DATA_LENGTH);
         }
         gettimeofday(&time_after_send, NULL);
         time_send_a_packet = (time_after_send.tv_sec - time_before_send.tv_sec) * 1000000
