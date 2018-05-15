@@ -1,9 +1,10 @@
 # RT-WABest
 A Novel End-to-end Bandwidth Estimation Tool in IEEE 802.11 wireless network
-##How to Compile
+
+## How to Compile
 `gcc RTWABest.c -o RTWABest -pthread`
 
-##How to use
+## How to use
 ```
 RTWABest -c src_ip -h dest_ip
   [-s packet_size_bytes]
